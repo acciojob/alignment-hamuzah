@@ -1,90 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Assignment 3</title>
-    <style>
-		table,th,tr,td{
-			border: 1px solid black;
-			border-collapse: collapse;
-			align-content: center;
-			border-spacing: 1px;
-            padding: 1px;
-		}
-        .middle {
-            border: 1px solid black;
-            border-spacing: 1px;
-            padding: 1px;
-        }
-        .green {
-            background-color: green;
-        }
-        .blue {
-            background-color: blue;
-        }
-        .center {
-            text-align: center;
-        }
-        .right {
-            text-align: right;
-        }
-    </style>
-</head>
-<body>
-    <h1 style="text-align: center;">HTML Assignment #3</h1>
 
-    <table class="middle" id="table-1">
+<html>
+
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<table class="middle" id="table-1" name="table-1">
+        <caption>HTML Assignment #3</caption>
         <tr>
             <td id="t11">left</td>
-            <td id="t12">center</td>
-            <td id="t13" class="center right">right</td>
+            <td id="t12" class="center">center</td>
+            <td id="t13" class="right">right</td>
         </tr>
+
         <tr>
-            <td>left</td>
-            <td>center</td>
-            <td class="center right">right</td>
+            <td id="t11">left</td>
+            <td id="t12" class="center">center</td>
+            <td id="t13" class="right">right</td>
         </tr>
+
         <tr>
-            <td>left</td>
-            <td>center</td>
-            <td class="center right">right</td>
+            <td id="t11">left</td>
+            <td id="t12" class="center">center</td>
+            <td id="t13" class="right">right</td>
         </tr>
     </table>
+    <br>
 
-    <h2 style="text-align: center;">Table 2</h2>
     <table class="middle" id="table-2">
-        <tr>
-            <td id="t21" colspan="6"> </td>
-        </tr>
-        <tr>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td>  </td>
-            <td> </td>
-            <td> </td>
-        </tr>
-        <!-- add more rows as needed -->
-    </table>
+		<tr>
+			<td colspan=6 id="t21">1</td>
+			<!-- <td>1</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td> -->
+		</tr>
+		<tr>
+			<td rowspan=4 id="t21" ></td>
+			<td>1</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td id="t21" ></td>
+			<td rowspan=2 colspan=3>1</td>
+			<td>1</td>
+			<!-- <td></td>
+			<td></td>
+			<td></td> -->
+		</tr>
+		<tr>
+			<td id="t21" ></td>
+			<td>1</td>
+			<!-- <td></td>
+			<td></td>
+			<td></td>
+			<td></td> -->
+		</tr>
+		<tr>
+			<td id="t21" ></td>
+			<td>1</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<!-- <td></td> -->
+		</tr>
+		<tr>
+			<td colspan=6 id="t21" >1</td>
+			<!-- <td>1</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td> -->
+		</tr>
+	</table>
+    <br>
 
-    <h2 style="text-align: center;">Table 3</h2>
     <table class="middle" id="table-3">
-        <tr class="green">
-            <td> </td>
-            <td></td>
-            <td> </td>
-        </tr>
-        <tr>
-            <td id="t-image" colspan="3"><img 
-			src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Image"></td>
-        </tr>
-        <tr class="blue">
-            <td> </td>
-            <td> </td>
-            <td> </td>
-        </tr>
-    </table>
+		<tr class="green">
+			<td></td>
+		</tr>
+		<tr>
+			<td id="t-image" style="text-align:center">
+				<img height="200px" src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_Retriever_Dukedestiny01_drvd.jpg">
+			</td>
+		</tr>
+		<tr class="blue">
+			<td></td>
+		</tr>
+	</table>
+	<!-- the entire body must be written by student -->
+    <script type="text/javascript" src="./script.js">
+</script>
 
 </body>
+
 </html>
